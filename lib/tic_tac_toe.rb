@@ -77,4 +77,7 @@ class TicTacToe
       turn
     end
   end
+  
+  def won?
+    winning_array
 end
