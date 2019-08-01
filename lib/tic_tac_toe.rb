@@ -99,7 +99,7 @@ def draw?
     full? && !won?
   end
 
-def over?(board)
+def over?
    if draw? || full?
       true
     elsif won? != false && won? != []
