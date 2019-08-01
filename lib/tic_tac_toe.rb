@@ -108,4 +108,13 @@ def over?
       false
   end 
   end 
+  
+    def winner
+    winner = nil
+    if won?.length == 3
+      winning_array = won?
+      winner = @board[winning_array[0]]
+    end
+    winner
+  end
 end
