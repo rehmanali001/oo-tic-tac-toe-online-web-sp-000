@@ -36,5 +36,5 @@ class TicTacToe
   elsif @board[index] == "X" || @board[index] == "O"
     true
   end
-end
+  end
 end
