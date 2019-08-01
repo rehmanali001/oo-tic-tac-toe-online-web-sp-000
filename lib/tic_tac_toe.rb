@@ -110,12 +110,18 @@ def over?
   end 
   
   def winner
-    winner = nil
-    if won?.length == 3
-      winning_array = won?
-      winner = @board[winning_array[0]]
-  end
-  winner
-  end
+       WIN_COMBINATIONS.each do |i|
+         result = []
+         i.each do |j|
+           result << @board[j]
+         end
+         if owin(result)
+           return "O"
+         elsif xwin(result)
+           return "X"
+         end
+         end
+       return nil
+     end
   
 end
