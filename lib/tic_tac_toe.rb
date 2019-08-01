@@ -114,4 +114,10 @@ def over?
       @board[winnerr.first]
     end
   end
+  
+    def play
+    until over? == true
+      turn
+    end
+
 end
