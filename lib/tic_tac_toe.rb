@@ -48,7 +48,7 @@ class TicTacToe
   
   def turn_count
   counter = 0
-  board.each do |moves| 
+  @board.each do |moves| 
   if moves == "X" || moves == "O"
     counter += 1
   end
@@ -64,7 +64,7 @@ class TicTacToe
   end
   end
   
-  def turn(board)
+  def turn
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
