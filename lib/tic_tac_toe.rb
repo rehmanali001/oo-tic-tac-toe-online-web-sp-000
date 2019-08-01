@@ -89,6 +89,21 @@ class TicTacToe
  FALSE
  end
  
- def full?
-   
+def full?(board)
+  if board.all? {|i| i == "X" || i == "O"}
+    return true
+  end
+end
+
+def draw?(board)
+    if !won?(board) && full?(board)
+      return true
+    end
+end
+
+def over?(board)
+  if won?(board) || draw?(board) || full?(board)
+    return true
+  end
+end
 end
