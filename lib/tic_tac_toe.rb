@@ -119,7 +119,7 @@ def over?
     until over? == true
       turn
   end
-  end
+
       if won?
       winner_name = winner
       puts "Congratulations #{winner_name}!"
