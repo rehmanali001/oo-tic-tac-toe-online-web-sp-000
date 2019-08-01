@@ -120,4 +120,12 @@ def over?
       turn
   end
   end
+  
+      if won?
+      winner_name = winner
+      puts "Congratulations #{winner_name}!"
+    elsif draw?
+      puts "Cat's Game!"
+    end
+  end
 end
