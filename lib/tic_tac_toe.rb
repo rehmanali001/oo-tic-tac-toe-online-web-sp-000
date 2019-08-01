@@ -88,4 +88,7 @@ class TicTacToe
   end
  FALSE
  end
+ 
+ def full?
+   
 end
