@@ -100,8 +100,11 @@ def draw?
   end
 
 def over?(board)
-  if won?(board) || draw?(board) || full?(board)
-    return true
-  end
-end
+   if draw? || full?
+      true
+    elsif won? != false && won? != []
+      true
+    else
+      false
+    end
 end
