@@ -115,7 +115,7 @@ def over?
          i.each do |j|
            result << @board[j]
          end
-         if owin(result)
+         if win(result)
            return "O"
          elsif xwin(result)
            return "X"
