@@ -42,7 +42,7 @@ class TicTacToe
     if index.between?(0, 8)
       !position_taken?(index)
     else 
-      return true
+      return false
   end
   end
 end
