@@ -115,9 +115,9 @@ def over?
     end
   end
   
-    def play
+   def play
     until over? == true
       turn
-    end
-
+  end
+  end
 end
