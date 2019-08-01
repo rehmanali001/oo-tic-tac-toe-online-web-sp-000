@@ -97,7 +97,7 @@ end
 
 def draw?
     full? && !won?
-    end
+  end
 end
 
 def over?(board)
