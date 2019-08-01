@@ -63,4 +63,6 @@ class TicTacToe
       return "O"
   end
   end
+  
+  def turn
 end
