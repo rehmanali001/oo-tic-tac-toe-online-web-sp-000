@@ -115,17 +115,16 @@ def over?
     end
   end
   
-   def play
+  def play
     until over? == true
       turn
-  end
-  end
-  
-      if won?
+    end
+
+     if won?
       winner_name = winner
       puts "Congratulations #{winner_name}!"
     elsif draw?
       puts "Cat's Game!"
     end
-    end
+  end
 end
